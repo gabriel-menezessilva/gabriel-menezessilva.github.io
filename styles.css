@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05rem;
+  background: #ececed;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+.header {
+  height: 20%;
+  background: #6bb9f0;
+}
+
+.me {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem;
+}
+
+.me figure {
+}
+
+.me .personal-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.me .personal-info h1 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.me .personal-info p {
+  color: #fff;
+}
+
+.me .personal-info .btn {
+  width: 100px;
+  padding: 12px 8px;
+  background: #6f8eb7;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+}
+
+.me .personal-info .btn:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+figure img {
+  border-radius: 4px;
+}
+
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.technical-skills .overview {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1024px;
+  padding: 32px;
+}
+
+.technical-skills .overview h2 {
+  padding-bottom: 8px;
+}
+
+.technical-skills .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 32px;
+  gap: 100px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  text-decoration: none;
+  padding-bottom: 4rem;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+  margin: 0 auto;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #6bb9f0;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  top: -18px;
+}
+
+.card .card-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card .card-text h3 {
+  text-align: center;
+}
+
+.card .card-text ul li {
+  margin: 8px 0 0 0;
+}
+
+.card .card-text ul li:before {
+  content: "\f00c"; 
+  color: #6bb9f0;
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; 
+  width: 1.3em;
+}
